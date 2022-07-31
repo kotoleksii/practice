@@ -4,23 +4,6 @@ const fromCurrency = document.querySelector(".from select");
 const toCurrency = document.querySelector(".to select");
 const btnCalculate = document.querySelector("form button");
 
-const serverTime = getServerTime();
-const nowDate = new Date(serverTime)
-                    .toLocaleString(
-                        undefined,
-                        { 
-                          year: 'numeric',
-                          month: '2-digit',
-                          day: '2-digit',
-                          weekday:"long",
-                          hour: '2-digit',
-                          hour12: false,
-                          minute:'2-digit'
-                        }
-                    );
-
-headerTime.textContent = nowDate;
-
 for(let i = 0; i < dropListCountries.length; i++) {
     for(currency_code in country_list){
         let selected;

@@ -2,9 +2,8 @@
     width: 370px;
     margin: auto;
     padding: 30px;
-    border-radius: 7px;
-    background: #141c2c;
-    border: 1px solid #172f48;  
+    border-radius: 20px;
+    background: #151a30;
 }
 .currency-wrapper header {
     font-size: 28px;
@@ -12,36 +11,30 @@
     text-align: center;
     color: #fff;
 }
-.currency-wrapper span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #868a90;
-}
 .currency-wrapper form {
-    margin: 25px 0 20px 0;
+    margin: 25px 0 5px 0;
 }
 form :where(input, select, button) {
     width: 100%;
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 form p {
     font-size: 18px;
     margin-bottom: 5px;
-    color: #fff;
+    color: #8f9bb3;
 }
 form input {
     height: 50px;
     font-size: 17px;
     padding: 0 15px;
     color: #fff;
-    background-color: #121a27;
-    border: 1px solid #172f48;
+    background-color: #151a30;
+    border: 1px solid #2e3a59;
 }
 form input:focus {
-    border: 2px solid #868a90;
+    border: 2px solid #0676ed;
 }
 form input::-webkit-outer-spin-button,
 form input::-webkit-inner-spin-button {
@@ -61,28 +54,27 @@ form .drop-list {
     display: flex;
     height: 45px;
     width: 115px;
-    border-radius: 5px;
+    border-radius: 8px;
     align-items: center;
     justify-content: center;
-    border: 1px solid #172f48;
+    border: 1px solid #2e3a59;
 }
 .select-box select {
     width: auto;
     font-size: 16px;
     margin: 0 -5px 0 5px;
     background-color: #141c2c;
-    color: #868a90;
+    color: #fff;
 }
 .select-box select::-webkit-scrollbar {
     width: 8px;
 }
 .select-box select::-webkit-scrollbar-track {
-    background: #fff;
+    background: #1a1f38;
 }
 .select-box select::-webkit-scrollbar-thumb {
-    background: #868a90;
+    background: #2e3a59;
     border-radius: 8px;
-    border-right: 2px solid #fff;
 }
 .select-box img {
     max-width: 25px;
@@ -91,7 +83,7 @@ form .drop-list {
     cursor: pointer;
     font-size: 22px;
     margin-top: 30px;
-    color: #868a90;
+    color: #8f9bb2;
 }
 form .exchange-rate {
     font-size: 17px;

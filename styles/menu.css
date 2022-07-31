@@ -3,3 +3,9 @@
     justify-content: center;
     flex-direction: column;
 }
+.menu a {    
+    display: inline-flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+  }

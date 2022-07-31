@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/todo.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+</head>
+<body>
+    <div class="todo-wrapper">
+        <div class="header">
+            <a href="/" class="btn-close close"><i class="fa-solid fa-xmark"></i></a>
+            <h2>TODO</h2>
+        </div>
+        <div class="task-input">
+            <input type="text" placeholder="Add a new task" maxlength="23"><button id="submitBtn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <span id="all" class="active">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="btn-clear">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+    </div>
+    <script src="https://kit.fontawesome.com/dcfca3188f.js" crossorigin="anonymous"></script>
+    <script src="/scripts/todo.js"></script>
+</body>
+</html>
