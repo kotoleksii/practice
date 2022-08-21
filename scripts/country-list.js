@@ -1,4 +1,4 @@
-const exchangeApiKey = "YOUR_API_KEY";
+const exchangeApiKey = "86d04899bcb9c815102aae01";
 
 let country_list = {
     "AED" : "AE",

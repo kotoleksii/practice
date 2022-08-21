@@ -1,5 +1,5 @@
 .currency-wrapper {
-    width: 370px;
+    max-width: 370px;
     margin: auto;
     padding: 30px;
     border-radius: 20px;
@@ -27,7 +27,7 @@ form p {
 }
 form input {
     height: 50px;
-    font-size: 17px;
+    font-size: 18px;
     padding: 0 15px;
     color: #fff;
     background-color: #151a30;

@@ -7,6 +7,7 @@
     <title>Practice</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/currency-converter.css">
+    <link rel="stylesheet" href="styles/qr-generator.css">
     <link rel="stylesheet" href="styles/menu.css">
 </head>
 <body>
@@ -14,9 +15,10 @@
     <div class="menu">
         <button class="btn-primary" onclick="popupToggle();" id="btnCurrencyConverter">Currency converter</button>
         <a href="html/todo.html" class="btn-primary">Todo</a>
+        <button class="btn-primary" onclick="popupToggleQr();" id="btnQr">QR Code Generator</button>
     </div> 
     <!-- End Main Menu -->
-    <!-- Start Modal -->
+    <!-- Start Currency Modal -->
     <div id="currencyConverterModal" class="modal">
         <!-- Start Currency Converter -->
         <div class="currency-wrapper">
@@ -49,10 +51,29 @@
         </div>
         <!-- End Currency Converter -->
     </div>
-    <!-- Start Modal -->
+    <!-- End Currency Modal -->  
+    <!-- Start QR Modal -->
+    <div id="QrModal" class="modal">
+        <!-- Start QR Code Generator -->
+        <div class="qr-wrapper">
+            <header>
+              <h1>QR Code Generator</h1>
+            </header>
+            <div class="form">
+              <input type="text" spellcheck="false" placeholder="Enter text or url">
+              <button class="btn-primary">Generate</button>
+            </div>
+            <div class="qr-code">
+              <img src="" alt="qr-code">
+            </div>
+          </div>   
+        <!-- End QR Code Generator -->
+    </div>
+    <!-- End QR Modal -->  
 </body>
 <script src="https://kit.fontawesome.com/dcfca3188f.js" crossorigin="anonymous"></script>
 <script src="scripts/country-list.js"></script>
 <script src="scripts/currency-converter.js"></script>
+<script src="scripts/qr-generator.js"></script>
 <script src="scripts/index.js"></script>
 </html>
