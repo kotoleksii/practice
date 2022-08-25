@@ -7,14 +7,38 @@
     <title>Practice</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/currency-converter.css">
+    <link rel="stylesheet" href="styles/todo.css">
     <link rel="stylesheet" href="styles/qr-generator.css">
     <link rel="stylesheet" href="styles/menu.css">
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <h4>OK:projects</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="container">
     <!-- Start Main Menu -->
     <div class="menu">
-        <button class="btn-primary" onclick="popupToggle();" id="btnCurrencyConverter">Currency converter</button>
-        <a href="html/todo.html" class="btn-primary">Todo</a>
+        <button class="btn-primary" onclick="popupToggleCurrency();" id="btnCurrencyConverter">Currency converter</button>
+        <button class="btn-primary" onclick="popupToggleTodo();" id="btnTodo">Todo</button>
+        <!-- <a href="html/todo.html" class="btn-primary">Todo</a> -->
         <button class="btn-primary" onclick="popupToggleQr();" id="btnQr">QR Code Generator</button>
     </div> 
     <!-- End Main Menu -->
@@ -47,13 +71,38 @@
                 </div>
                 <div class="exchange-rate"></div>
                 <button class="btn-primary">Calculate</button>
+                <div class="btn-back" onclick="popupToggleCurrency();">Back</div>
             </form>
         </div>
         <!-- End Currency Converter -->
     </div>
     <!-- End Currency Modal -->  
+    <!-- Start Currency Modal -->
+    <div id="todoModal" class="modal">
+        <!-- Start Todo -->
+        <div class="todo-wrapper">
+            <div class="header">
+                <div class="btn-close close" onclick="popupToggleTodo();"><i class="fa-solid fa-xmark"></i></div>
+                <h2>TODO</h2>
+            </div>
+            <div class="task-input">
+                <input type="text" placeholder="Add a new task" maxlength="23"><button id="submitBtn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="controls">
+                <div class="filters">
+                    <span id="all" class="active">All</span>
+                    <span id="pending">Pending</span>
+                    <span id="completed">Completed</span>
+                </div>
+                <button class="btn-clear">Clear All</button>
+            </div>
+            <ul class="task-box"></ul>
+        </div>
+        <!-- End Todo -->
+    </div>
+     <!-- End Todo --> 
     <!-- Start QR Modal -->
-    <div id="QrModal" class="modal">
+    <div id="qrModal" class="modal">
         <!-- Start QR Code Generator -->
         <div class="qr-wrapper">
             <header>
@@ -62,6 +111,7 @@
             <div class="form">
               <input type="text" spellcheck="false" placeholder="Enter text or url">
               <button class="btn-primary">Generate</button>
+              <div class="btn-back" onclick="popupToggleQr();">Back</div>
             </div>
             <div class="qr-code">
               <img src="" alt="qr-code">
@@ -70,10 +120,12 @@
         <!-- End QR Code Generator -->
     </div>
     <!-- End QR Modal -->  
+    </div>
 </body>
 <script src="https://kit.fontawesome.com/dcfca3188f.js" crossorigin="anonymous"></script>
 <script src="scripts/country-list.js"></script>
 <script src="scripts/currency-converter.js"></script>
+<script src="scripts/todo.js"></script>
 <script src="scripts/qr-generator.js"></script>
 <script src="scripts/index.js"></script>
 </html>

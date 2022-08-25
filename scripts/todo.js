@@ -41,7 +41,7 @@ function showTodo(filter) {
     taskBox.innerHTML = liTag || `<span>You don't have any task here</span>`;
     let checkTask = taskBox.querySelectorAll('.task');
     !checkTask.length ? clearAllBtn.classList.remove('active') : clearAllBtn.classList.add('active');
-    taskBox.offsetHeight >= 300 ? taskBox.classList.add('overflow') : taskBox.classList.remove('overflow');
+    taskBox.offsetHeight >= 259 ? taskBox.classList.add('overflow') : taskBox.classList.remove('overflow');
 }
 
 showTodo('all');

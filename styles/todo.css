@@ -1,8 +1,5 @@
-body{
-    overflow: hidden;
-}
 .todo-wrapper{
-    max-width: 405px;
+    width: 370px;
     padding: 8px 0 30px;
     margin: 37px auto;
     background: #151a30;
@@ -14,7 +11,7 @@ body{
   }
   .btn-close {
     color: #8f9bb3;
-
+    cursor: pointer;
     /* For Round Button */
 
     /* background-color: #0e142e;
@@ -29,6 +26,9 @@ body{
     transition:all 0.25s;
     width:1.5rem;
     height:1.5rem; */
+  }
+  .btn-close:hover {
+    color: #fff;
   }
   .header a {
     text-decoration: none;
@@ -128,7 +128,7 @@ body{
   }
   .task-box.overflow{
     overflow-y: auto;
-    max-height: 300px;
+    max-height: 259px;
   }
   .task-box::-webkit-scrollbar{
     width: 5px;
@@ -241,9 +241,6 @@ body{
   }
 
   @media (max-width: 400px) {
-    body{
-      padding: 0 10px;
-    }
     .wrapper {
       padding: 20px 0;
     }
