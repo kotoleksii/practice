@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/currency-converter.css">
-    <link rel="stylesheet" href="styles/todo.css">
-    <link rel="stylesheet" href="styles/qr-generator.css">
-    <link rel="stylesheet" href="styles/menu.css">
 </head>
 <body>
     <nav>
         <div class="logo">
-            <h4>OK:projects</h4>
+            <a href="/"><h4>OK:projects</h4></a>      
         </div>
         <ul class="nav-links">
             <li>
@@ -25,6 +21,11 @@
             </li>
             <li>
                 <a href="#">Projects</a>
+            </li>
+            <li class="mode">
+            <div class="mode-toggle">
+                <span class="switch"></span>
+              </div>
             </li>
         </ul>
         <div class="burger">
@@ -38,7 +39,6 @@
     <div class="menu">
         <button class="btn-primary" onclick="popupToggleCurrency();" id="btnCurrencyConverter">Currency converter</button>
         <button class="btn-primary" onclick="popupToggleTodo();" id="btnTodo">Todo</button>
-        <!-- <a href="html/todo.html" class="btn-primary">Todo</a> -->
         <button class="btn-primary" onclick="popupToggleQr();" id="btnQr">QR Code Generator</button>
     </div> 
     <!-- End Main Menu -->

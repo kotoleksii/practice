@@ -1,0 +1,21 @@
+:root {
+    --background: #edf5fc;
+    --panel: #fdfefe;
+    --primary: #0676ed;
+    --success: #12c99b;
+    --warning: #f2a600;
+    --danger: #fa5d5d;
+    --text: #101426;
+    --label: #8f9bb3;
+    --secondary: #57627b;  
+    --border: #dae1ed;
+    --selected: #e4f0fc;
+}
+
+  body.dark{ 
+    --background: #212b44;
+    --panel: #151a30;
+    --text: #ffffff;
+    --border: #2e3a59;
+    --selected: #222b45;
+}

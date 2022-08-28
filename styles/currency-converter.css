@@ -3,13 +3,14 @@
     margin: auto;
     padding: 20px;
     border-radius: 20px;
-    background: #151a30;
+    background: var(--panel);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 .currency-wrapper header {
     font-size: 28px;
     font-weight: 500;
     text-align: center;
-    color: #fff;
+    color: var(--text);
 }
 .currency-wrapper form {
     margin: 25px 0 5px 0;
@@ -23,18 +24,18 @@ form :where(input, select, button) {
 form p {
     font-size: 18px;
     margin-bottom: 5px;
-    color: #8f9bb3;
+    color: var(--label);
 }
 form input {
     height: 50px;
     font-size: 18px;
     padding: 0 15px;
-    color: #fff;
-    background-color: #151a30;
-    border: 1px solid #2e3a59;
+    color: var(--text);
+    background-color: var(--background);
+    border: 1px solid var(--border);
 }
 form input:focus {
-    border: 2px solid #0676ed;
+    border: 2px solid var(--primary);
 }
 form input::-webkit-outer-spin-button,
 form input::-webkit-inner-spin-button {
@@ -57,23 +58,23 @@ form .drop-list {
     border-radius: 8px;
     align-items: center;
     justify-content: center;
-    border: 1px solid #2e3a59;
+    border: 1px solid var(--border);
 }
 .select-box select {
     width: auto;
     font-size: 16px;
     margin: 0 -5px 0 5px;
-    background-color: #141c2c;
-    color: #fff;
+    background-color: var(--panel);
+    color: var(--text);
 }
 .select-box select::-webkit-scrollbar {
     width: 8px;
 }
 .select-box select::-webkit-scrollbar-track {
-    background: #1a1f38;
+    background: var(--background);
 }
 .select-box select::-webkit-scrollbar-thumb {
-    background: #2e3a59;
+    background: var(--secondary);
     border-radius: 8px;
 }
 .select-box img {
@@ -83,10 +84,10 @@ form .drop-list {
     cursor: pointer;
     font-size: 22px;
     margin-top: 30px;
-    color: #8f9bb2;
+    color: var(--label);
 }
 form .exchange-rate {
     font-size: 17px;
     margin: 20px 0 20px;
-    color: #fff;
+    color: var(--text);
 }

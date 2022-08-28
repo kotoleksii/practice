@@ -4,6 +4,41 @@ const modalTodo = document.getElementById('todoModal');
 const modalQr = document.getElementById('qrModal');
 const btnBack = document.querySelector('.btn-back');
 const burger = document.querySelector('.burger');
+const ball = body.querySelector('.switch');
+
+
+
+const modeToggle = body.querySelector(".mode-toggle");
+let getMode = localStorage.getItem("mode");
+if(getMode && getMode ==="dark"){
+    body.classList.toggle("dark");
+    addDarkModeIcon();
+}else {
+    addLightModeIcon();
+}
+
+modeToggle.addEventListener("click", () =>{
+  body.classList.toggle("dark");
+  if(body.classList.contains("dark")){
+      localStorage.setItem("mode", "dark");
+      addDarkModeIcon();
+  }else{
+      localStorage.setItem("mode", "light");
+      addLightModeIcon();
+  }
+});
+
+function addDarkModeIcon() {
+  ball.classList.remove('fa-solid', 'fa-moon');
+  ball.classList.add('fa-solid', 'fa-sun');
+  ball.style.color = '#fff';
+}
+
+function addLightModeIcon() {
+  ball.classList.remove('fa-solid', 'fa-sun');
+  ball.classList.add('fa-solid', 'fa-moon');
+  ball.style.color = '#111';
+}
 
 
 body.addEventListener('click', e => {

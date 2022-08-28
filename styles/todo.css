@@ -2,7 +2,7 @@
     width: 370px;
     padding: 8px 0 30px;
     margin: 37px auto;
-    background: #151a30;
+    background: var(--panel);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   }
@@ -10,7 +10,7 @@
     padding: 10px 25px;
   }
   .btn-close {
-    color: #8f9bb3;
+    color: var(--label);
     cursor: pointer;
     /* For Round Button */
 
@@ -28,13 +28,13 @@
     height:1.5rem; */
   }
   .btn-close:hover {
-    color: #fff;
+    color: var(--secondary);
   }
   .header a {
     text-decoration: none;
   }
   .header h2 {
-    color: #fff;
+    color: var(--text);
     font-size: 22px;
   }
   .header .close {
@@ -48,23 +48,22 @@
     position: relative;
   }
   .task-input input{
-    background-color: #1a1f38;
-    color: #fff;
+    background-color: var(--background);
+    color: var(--text);
     height: 100%;
     width: 100%;
     outline: none;
     font-size: 18px;
     border-radius: 5px;
     padding: 0 50px 0 13px;
-    border: 1px solid #2e3a59;
+    border: 1px solid var(--border);
   }
   .task-input input:focus,
   .task-input input.active{
-    border: 2px solid #0676ed;
-    background: #1a1f38;
+    border: 2px solid var(--primary);
   }
   .task-input input::placeholder{
-    color: #57627b;
+    color: var(--secondary);
   }
   #submitBtn {
     margin-left: -50px;
@@ -77,7 +76,7 @@
 }
 .task-input i {
     font-size: 22px;
-    color: #fff;
+    color: var(--success);
 }
   .controls, li{
     display: flex;
@@ -86,25 +85,25 @@
   }
   .controls{
     padding: 18px 25px;
-    border-bottom: 3px solid #2e3a59;
+    border-bottom: 3px solid var(--border);
   }
   .filters span{
     margin: 0 8px;
     font-size: 17px;
-    color: #57627b;
+    color: var(--secondary);
     cursor: pointer;
   }
   .filters span:first-child{
     margin-left: 0;
   }
   .filters span.active{
-    color: #fff;
+    color: var(--text);
   }
   .btn-clear{
     border: none;
     opacity: 0.6;
     outline: none;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     font-size: 13px;
     padding: 7px 13px;
@@ -112,7 +111,7 @@
     letter-spacing: 0.3px;
     pointer-events: none;
     transition: transform 0.25s ease;
-    background: #0676ed;
+    background: var(--danger);
   }
   .btn-clear.active{
     opacity: 0.9;
@@ -134,21 +133,21 @@
     width: 5px;
   }
   .task-box::-webkit-scrollbar-track{
-    background: #1a1f38;
+    background: var(--background);
     border-radius: 25px;
   }
   .task-box::-webkit-scrollbar-thumb{
-    background: #2e3a59;
+    background: var(--secondary);
     border-radius: 25px;
   }
   .task-box .task{
-    color: #fff;
+    color: var(--text);
     list-style: none;
     font-size: 17px;
     margin-bottom: 18px;
     padding-bottom: 16px;
     align-items: flex-start;
-    border-bottom: 2px solid #2e3a59;
+    border-bottom: 2px solid var(--border);
   }
   .task-box .task:last-child{
     margin-bottom: 0;
@@ -161,7 +160,7 @@
   }
   .task label input{
     margin-top: 3px;
-    accent-color: #0676ed;
+    accent-color: var(--primary);
   }
   .task label p{
     user-select: none;
@@ -176,7 +175,7 @@
     color: #8f9bb3;
   }
   .task-box span {
-    color: #57627b;
+    color: var(--secondary);
   }
   .settings :where(i, li){
     cursor: pointer;
@@ -186,7 +185,7 @@
     right: -5px;
     bottom: -65px;
     padding: 5px 0;
-    background: #151a30;
+    background: var(--panel);
     position: absolute;
     border-radius: 4px;
     transform: scale(0);
@@ -217,15 +216,15 @@
     margin-bottom: 0;
   }
   .settings li:hover{
-    background: #1b223f;
-    color: #fff;
+    background: var(--selected);
+    color: var(--text);
   }
   .settings li i{
     padding-right: 8px;
   }  
   input[type=checkbox] {
       background-color: transparent;
-      border: 1px solid #2e3a59;
+      border: 1px solid var(--border);
       border-radius: 3px;
       appearance: none;
       -webkit-appearance: none;
@@ -236,8 +235,10 @@
       position: relative;
   }
   input[type=checkbox]:checked {
-      background-color: #0676ed;
-      background: #0676ed url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 4px 4px no-repeat;
+      background-color: var(--primary);
+      background: var(--primary)
+      url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==")
+      4px 4px no-repeat;
   }
 
   @media (max-width: 400px) {
